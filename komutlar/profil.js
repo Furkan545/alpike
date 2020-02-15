@@ -59,10 +59,7 @@ exports.run = async (client, message, args, color) => {
       note: 'Bilgi ayarlanmadı.'
     } 
  } 
- 
- /**
- * Takes all from JSON before call it
- */
+
   let xp = lepel[user.id].xp;
   let uLevel = lepel[user.id].level;
   let nxtLvlXp = uLevel * 500;
@@ -73,11 +70,6 @@ exports.run = async (client, message, args, color) => {
   let background = bg[user.id].background;
   let fish = fishh[user.id].fish;
   let work = works[user.id].work;
-  
-  /**
-  * Create Canvas function
-  * Use try and catch for any error will caused
-  */
     try {    
   async function createCanvas() {
     var imageUrlRegex = /\?size=2048$/g;
@@ -161,5 +153,5 @@ exports.conf = {
 exports.help = {
     name: "profil",
     description: "Profilinizi gösterir.",
-    usage: "profil [@mention|userID]"
+    usage: "profil [@kullanıcı]"
 }
