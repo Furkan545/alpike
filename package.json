@@ -10,7 +10,7 @@
     "start": "node start2.js"
   },
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "discord.js": "^12.5.1",
     "express": "^4.17.1",
     "node-opus": "^0.3.2",
     "snekfetch": "^4.0.4",
@@ -25,7 +25,7 @@
     "node-superfetch": "^0.1.9"
   },
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
