@@ -75,7 +75,7 @@ exports.run = async (client, message, args, color) => {
     var imageUrlRegex = /\?size=2048$/g;
     var namam = user.username;
     var jadim = namam.length > 10 ? namam.substring(0, 12) + "..." : namam;
-    var {body: avatar} = await get(user.displayAvatarURL.replace(imageUrlRegex, "?size128"));
+    var {body: avatar} = await get(user.displayAvatarURL().replace(imageUrlRegex, "?size128"));
     var {body: background1} = await get(background)
     var {body: background2} = await get('https://cdn.discordapp.com/attachments/492914262482878485/493210917488558111/1537660968355.png');
     var {body: dIcon} = await get('https://orig00.deviantart.net/2133/f/2016/200/f/a/discord_token_icon_dark_by_flexo013-daaj71i.png')
